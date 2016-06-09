@@ -1,0 +1,212 @@
+/* External fonts */
+@import url(font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
+
+/* Global Styling*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+    background: #eeeeee;
+}
+
+body, input, select, textarea {
+    color: #ffffff;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+  font-weight: 400; 
+  line-height: 28px;
+  margin: 8px 0;
+  padding: 0;
+} 
+
+h1 {
+  font-size: 22px;
+  color: #000000;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+/* Links */
+a,
+a:visited,
+a:active,
+a:hover {
+  text-decoration:none;
+}
+
+/* Structure */  
+
+.wrapper{
+  width: 100%; 
+}
+
+#calbox {
+  width: 320px;
+  height: auto;
+  background-color: #383d40;
+  border-radius: 10px;
+  box-shadow: 0 2px 11px 2px rgba(0,0,0,.35);
+  margin: 50px auto;
+}
+
+.header {
+  width: 100%;
+  margin-bottom: 15px;
+  background-color: #b8b8b8;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+  border-top: 5px solid rgba(0,0,0,0.3);
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+  border-left: 1px solid rgba(0,0,0,0.3);
+  border-right: 1px solid rgba(0,0,0,0.3);
+}
+
+.calbody {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+
+.logo {
+  display: inline-block;
+  float: left;
+  font-size: 18px;
+  color: #181617;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding-bottom: 15px;
+}
+
+#cal input[type="number"] {
+  width: 100%;
+  display: block;
+  border: none;
+  background-color: #7a7f79;
+  padding: 8px;
+  color: #000000;
+  text-shadow: 0 2px 1px rgba(0,0,0,0.3);
+  font-family: 'Share Tech Mono';
+  text-align: right;
+  font-size: 25px;
+  letter-spacing: 2px;
+  box-shadow: inset 0 1px 3px 3px rgba(0,0,0,0.5);
+  margin-bottom: 10px;
+}
+
+#cal input[type="button"] {
+  display: inline-block;
+  cursor: pointer;
+  background-color: #404548;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #000;
+  box-shadow: 
+    inset 0 2px 3px rgba(255,255,255,0.3),
+    inset 0 -2px 3px rgba(0,0,0,0.3),
+    3px 2px 1px #000;
+  width: 22%;
+  height: 22%;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+#cal input[type="button"]:hover {
+border: 1px solid #b8b8b8;
+-webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+        transform: scale(1.1);
+}
+
+#cal input[name="num0"],
+#cal input[name="num1"],
+#cal input[name="num2"],
+#cal input[name="num3"],
+#cal input[name="num4"],
+#cal input[name="num5"],
+#cal input[name="num6"],
+#cal input[name="num7"],
+#cal input[name="num8"],
+#cal input[name="num9"], 
+#cal input[name="dot"] {
+  background: -webkit-radial-gradient(circle, rgba(255,255,255,0.2) 20%, #353a3d 80%);
+  background: radial-gradient(circle, rgba(255,255,255,0.2) 20%, #353a3d 80%);
+}
+
+#cal input[name="clear"],
+#cal input[name="del"] {
+  width: 47%;
+  height: auto;
+  background-color: #FFFFFF;
+  background: -webkit-radial-gradient(circle at bottom, rgba(197,124,0,0.8), #ea9a11 90%);
+  background: radial-gradient(circle at bottom, rgba(197,124,0,0.8), #ea9a11 90%);
+  color: #ffffff;
+}
+
+
+#cal input[name="division"],
+#cal input[name="multiplication"],
+#cal input[name="subtraction"],
+#cal input[name="add"], 
+#cal input[name="equal"] {
+  background-color: #2a98a1;
+  background: -webkit-radial-gradient(bottom, circle, rgba(255,255,255,0.8), #2a98a1 90%);
+  background: radial-gradient(circle at bottom, rgba(255,255,255,0.8), #2a98a1 90%);
+  color: #ffffff;
+}
+
+
+/* ================================================================ */
+/* Footer styles -------------------------------------- */
+/* ================================================================ */
+
+#footernav 
+ {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  list-style-type: none;
+  background-color: #CCCCCC;
+  text-align: center;
+  box-shadow: 0 0 3px 3px rgba(0,0,0,0.3);
+}
+
+#footernav i {
+  padding-right: 10px;
+}
+
+#footernav a:link {
+  color: #454545;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+#footernav a:visited,
+#footernav a:active,
+#footernav a:hover {
+  color: #454545;
+  text-shadow: -3px 5px 5px rgba(0,0,0,0.5); 
+}
