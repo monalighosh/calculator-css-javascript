@@ -3,6 +3,8 @@
     <head>
     <title>Calculator</title>
     <link rel="stylesheet" type="text/css" href="css/calculator.css">
+ <!--   <script type="text/javascript" src="js/main.js"></script> -->
+
     </head>
     <body>
     <!--main container-->
@@ -18,43 +20,43 @@
         <!--calculator header-->
 
         <!--calculator screen-->
-        <input name="screen" type="number" maxlength="13" size="13" placeholder="8888888888888">
+        <input id="screen" type="text" placeholder="8888888888888888" value="">
         </div>
         <!--end calculator screen-->
 
         <!--calculator buttons-->
-        <div class="calbody">
+        <div id="calbody">
               <div>
-              <input type="button" name="num7" value="7" />
-              <input type="button" name="num8" value="8" />
-              <input type="button" name="num9" value="9" />
-              <input type="button" name="division" value="/" />
+              <input type="button" id="num7" value="7"/>
+              <input type="button" id="num8" value="8" />
+              <input type="button" id="num9" value="9" />
+              <input type="button" id="division" value="/" />
             </div>
 
             <div>
-              <input type="button" name="num4" value="4" />
-              <input type="button" name="num5" value="5" />
-              <input type="button" name="num6" value="6" />
-              <input type="button" name="multiplication" value="*" />
+              <input type="button" id="num4" value="4" />
+              <input type="button" id="num5" value="5" />
+              <input type="button" id="num6" value="6" />
+              <input type="button" id="multiplication" value="*" />
             </div>
 
             <div>
-              <input type="button" name="num1" value="1" />
-              <input type="button" name="num2" value="2" />
-              <input type="button" name="num3" value="3" />
-              <input type="button" name="subtraction" value="-" />
+              <input type="button" id="num1" value="1" />
+              <input type="button" id="num2" value="2" />
+              <input type="button" id="num3" value="3" />
+              <input type="button" id="subtraction" value="-" />
             </div>
 
             <div>
-              <input type="button" name="num0" value="0" />
-              <input type="button" name="dot" value="." />
-              <input type="button" name="equal" value="=" />
-              <input type="button" name="add" value="+" />
+              <input type="button" id="num0" value="0" />
+              <input type="button" id="dot" value="." />
+              <input type="button" id="equal" value="=" />
+              <input type="button" id="add" value="+" />
             </div>
 
             <div>
-              <input type="button" name="clear" value="CLEAR" />
-              <input type="button" name="del" value="DEL" />
+              <input type="button" id="clear" value="CLEAR" />
+              <input type="button" id="del" value="DEL" />
               
             </div>
             </div>
@@ -72,5 +74,7 @@
     </div>
     <!--end footer navigation-->
 
+    <!-- javascript file -->
+    <script src="js/main.js"></script>
     </body>
     </html>

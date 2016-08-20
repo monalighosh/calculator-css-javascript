@@ -77,7 +77,7 @@ a:hover {
   border-right: 1px solid rgba(0,0,0,0.3);
 }
 
-.calbody {
+#calbody {
   width: 100%;
   padding: 10px 20px;
 }
@@ -94,7 +94,7 @@ a:hover {
   padding-bottom: 15px;
 }
 
-#cal input[type="number"] {
+#cal input[type="text"] {
   width: 100%;
   display: block;
   border: none;
@@ -110,13 +110,13 @@ a:hover {
   margin-bottom: 10px;
 }
 
-#cal input[type="number"]::-webkit-inner-spin-button, 
-#cal input[type="number"]::-webkit-outer-spin-button { 
+#cal input[type="text"]::-webkit-inner-spin-button, 
+#cal input[type="text"]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
   margin: 0; 
 }
 
-#cal input[type="number"] {
+#cal input[type="text"] {
     -moz-appearance:textfield;
 }
 
@@ -149,23 +149,23 @@ border: 1px solid #b8b8b8;
         transform: scale(1.1);
 }
 
-#cal input[name="num0"],
-#cal input[name="num1"],
-#cal input[name="num2"],
-#cal input[name="num3"],
-#cal input[name="num4"],
-#cal input[name="num5"],
-#cal input[name="num6"],
-#cal input[name="num7"],
-#cal input[name="num8"],
-#cal input[name="num9"], 
-#cal input[name="dot"] {
+#cal input[id="num0"],
+#cal input[id="num1"],
+#cal input[id="num2"],
+#cal input[id="num3"],
+#cal input[id="num4"],
+#cal input[id="num5"],
+#cal input[id="num6"],
+#cal input[id="num7"],
+#cal input[id="num8"],
+#cal input[id="num9"], 
+#cal input[id="dot"] {
   background: -webkit-radial-gradient(circle, rgba(255,255,255,0.2) 20%, #353a3d 80%);
   background: radial-gradient(circle, rgba(255,255,255,0.2) 20%, #353a3d 80%);
 }
 
-#cal input[name="clear"],
-#cal input[name="del"] {
+#cal input[id="clear"],
+#cal input[id="del"] {
   width: 47%;
   height: auto;
   background-color: #FFFFFF;
@@ -175,11 +175,11 @@ border: 1px solid #b8b8b8;
 }
 
 
-#cal input[name="division"],
-#cal input[name="multiplication"],
-#cal input[name="subtraction"],
-#cal input[name="add"], 
-#cal input[name="equal"] {
+#cal input[id="division"],
+#cal input[id="multiplication"],
+#cal input[id="subtraction"],
+#cal input[id="add"], 
+#cal input[id="equal"] {
   background-color: #2a98a1;
   background: -webkit-radial-gradient(bottom, circle, rgba(255,255,255,0.8), #2a98a1 90%);
   background: radial-gradient(circle at bottom, rgba(255,255,255,0.8), #2a98a1 90%);
