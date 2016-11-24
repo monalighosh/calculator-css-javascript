@@ -57,7 +57,8 @@ a:hover {
 }
 
 #calbox {
-  width: 320px;
+  width: 100%;
+  max-width: 320px;
   height: auto;
   background-color: #383d40;
   border-radius: 10px;
@@ -219,4 +220,26 @@ border: 1px solid #b8b8b8;
 #footernav a:hover {
   color: #454545;
   text-shadow: -3px 5px 5px rgba(0,0,0,0.5); 
+}
+
+/* ================================================================ */
+/* Media Queries -------------------------------------- */
+/* ================================================================ */
+
+@media (max-width: 361px) and (orientation: portrait) {
+
+  #calbox {
+    width: 95%;
+  }
+
+  #cal input[type="button"] {
+    width: 21%;
+    height: 21%;
+  }
+
+  #cal input[id="clear"],
+  #cal input[id="del"] {
+    width: 46%;
+  }
+
 }
