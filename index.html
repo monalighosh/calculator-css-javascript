@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic page needs -->
+  <meta charset="utf-8">
+  <title>Calculator</title>
+
+  <!-- Responsive specific meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/calculator.css">
+</head>
+<body>
+  <!--main container-->
+  <div class="wrapper">
+  <!--calculator box-->
+  <div id="calbox">
+    <form id="cal" method="post" action="">
+      <!--calculator header-->
+      <div class="header">
+       <div class="logo">casio</div>
+       <!--calculator screen-->
+       <input id="screen" type="text" placeholder="8888888888888888">
+      </div>
+      <!--calculator buttons-->
+      <div id="calbody">
+        <div>
+          <input type="button" id="num7" value="7"/>
+          <input type="button" id="num8" value="8" />
+          <input type="button" id="num9" value="9" />
+          <input type="button" id="division" value="/" />
+        </div>
+
+        <div>
+          <input type="button" id="num4" value="4" />
+          <input type="button" id="num5" value="5" />
+          <input type="button" id="num6" value="6" />
+          <input type="button" id="multiplication" value="*" />
+        </div>
+
+        <div>
+          <input type="button" id="num1" value="1" />
+          <input type="button" id="num2" value="2" />
+          <input type="button" id="num3" value="3" />
+          <input type="button" id="subtraction" value="-" />
+        </div>
+
+        <div>
+          <input type="button" id="num0" value="0" />
+          <input type="button" id="dot" value="." />
+          <input type="button" id="equal" value="=" />
+          <input type="button" id="add" value="+" />
+        </div>
+
+        <div>
+          <input type="button" id="clear" value="CLEAR" />
+          <input type="button" id="del" value="DEL" />
+        </div>
+      </div>
+    </form>
+  </div>
+  </div>
+  <!--end main container-->
+
+  <!--footer navigation-->
+  <div id="footernav">
+  <a href="http://monalighosh.github.io/Project-1/"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
